@@ -6,42 +6,27 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
-`tsx-to-jsx-cli` is a Node.js package and CLI tool that converts TypeScript (.tsx) files to JavaScript (.jsx) files from a specified source directory, saving the result in a destination directory.
-
-## Installation
-
-Before using the tool, make sure you have [Node.js](https://nodejs.org/) installed on your machine. Please install the package using your preferred package manager.
-
-```bash
-npm install tsx-to-jsx-cli
-```
-
-```bash
-yarn add tsx-to-jsx-cli
-```
-
-```bash
-pnpm add tsx-to-jsx-cli
-```
-
-```bash
-bun install tsx-to-jsx-cli
-```
+`tsx-to-jsx-cli` is a CLI tool that converts TypeScript (ts/tsx) files to JavaScript (js/jsx) files from a specified source directory, saving the result in a destination directory.
 
 ## Usage
 
-```Typescript
-import { convertTsxToJsx } from 'tsx-to-jsx-cli'
-await convertTsxToJsx(sourceDirectory, destinationDirectory)
+```bash
+Usage: tsx-to-jsx [options]
+
+A CLI for converting tsx to jsx
+
+Options:
+  -s, --srcDir <path>  Source directory to convert
+  -d, --dstDir <path>  Destination directory to save to
+  -v, --version        Display the version number
+  -h, --help           display help for command
 ```
-
-### CLI Usage
-
-Replace `<source-directory>` with the path to your TypeScript source files and `<destination-directory>` with the desired path for the compiled JavaScript files.
 
 ```bash
-tsx-to-jsx-cli -s <source-directory> -d <destination-directory>
+npx tsx-to-jsx-cli -s <source-directory> -d <destination-directory>
 ```
+
+Replace <source-directory> with the path to your TypeScript source files and <destination-directory> with the desired path for the compiled JavaScript files.
 
 ## License
 
