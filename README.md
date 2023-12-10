@@ -23,10 +23,17 @@ Options:
 ```
 
 ```bash
+# Using npx
 npx tsx-to-jsx-cli -s <source-directory> -d <destination-directory>
+
+# Using pnpx
+pnpx tsx-to-jsx-cli -s <source-directory> -d <destination-directory>
+
+# Using bunx
+bunx tsx-to-jsx-cli -s <source-directory> -d <destination-directory>
 ```
 
-Replace <source-directory> with the path to your TypeScript source files and <destination-directory> with the desired path for the compiled JavaScript files.
+Replace `<source-directory>` with the path to your TypeScript source files and `<destination-directory>` with the desired path for the compiled JavaScript files.
 
 ## License
 
