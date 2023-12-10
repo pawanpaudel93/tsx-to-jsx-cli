@@ -1,0 +1,66 @@
+{
+  "name": "tsx-to-jsx-cli",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.10.5",
+  "description": "Convert tsx to jsx",
+  "author": "Pawan Paudel <pawanpaudel93@gmail.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/pawanpaudel93",
+  "homepage": "https://github.com/pawanpaudel93/tsx-to-jsx-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawanpaudel93/tsx-to-jsx-cli.git"
+  },
+  "bugs": "https://github.com/pawanpaudel93/tsx-to-jsx-cli/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "bin": {
+    "tsx-to-jsx": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup && tsx ./scripts/embedVersion.ts",
+    "dev": "tsup --watch",
+    "lint": "eslint .",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepare": "simple-git-hooks"
+  },
+  "dependencies": {
+    "@clack/core": "^0.3.3",
+    "@clack/prompts": "^0.7.0",
+    "commander": "^11.1.0",
+    "tsx-to-jsx": "^0.0.3"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^1.2.1",
+    "@antfu/ni": "^0.21.9",
+    "@antfu/utils": "^0.7.6",
+    "@types/node": "^20.9.1",
+    "bumpp": "^9.2.0",
+    "eslint": "^8.53.0",
+    "esno": "^4.0.0",
+    "lint-staged": "^15.1.0",
+    "pnpm": "^8.10.5",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
+    "simple-git-hooks": "^2.9.0",
+    "tsup": "^8.0.1",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0-beta.4"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
