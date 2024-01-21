@@ -18,8 +18,8 @@ importers:
         specifier: ^11.1.0
         version: 11.1.0
       tsx-to-jsx:
-        specifier: ^0.0.3
-        version: 0.0.3
+        specifier: ^0.0.4
+        version: 0.0.4
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^1.2.1
@@ -3588,8 +3588,8 @@ packages:
       - ts-node
     dev: true
 
-  /tsx-to-jsx@0.0.3:
-    resolution: {integrity: sha512-tfFzRqPqQTKUINevyUniJgElGD9ZTZ50KjeHorhMPJB9dTz05xN5oRdf4DL9+fl/uU9KrSlCWkGrJZ394ZJXXg==}
+  /tsx-to-jsx@0.0.4:
+    resolution: {integrity: sha512-kYOEEGgFCj1/TBTaqwHpK+VqOk0xvIY9FwJVKKzRiy0XB4q3sLW0Ok3LVekisG+aLArZRD7uJ2cwR4Re6IOJXA==}
     dependencies:
       chalk: 5.3.0
       execa: 8.0.1

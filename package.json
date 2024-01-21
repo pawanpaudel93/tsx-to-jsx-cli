@@ -36,7 +36,7 @@
     "@clack/core": "^0.3.3",
     "@clack/prompts": "^0.7.0",
     "commander": "^11.1.0",
-    "tsx-to-jsx": "^0.0.3"
+    "tsx-to-jsx": "^0.0.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^1.2.1",
