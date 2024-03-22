@@ -35,6 +35,9 @@ bunx tsx-to-jsx-cli -s <source-directory> -d <destination-directory>
 
 Replace `<source-directory>` with the path to your TypeScript source files and `<destination-directory>` with the desired path for the compiled JavaScript files.
 
+## Related
+- [tsx-to-jsx](https://github.com/pawanpaudel93/tsx-to-jsx)
+
 ## License
 
 [MIT](./LICENSE) License © 2023-PRESENT [Pawan Paudel](https://github.com/pawanpaudel93)
